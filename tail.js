@@ -30,3 +30,4 @@ assertEqual(result, ["Lighthouse", "Labs"]); //
 
 // printing result to check
 // console.log(newArray)
+
