@@ -16,7 +16,7 @@ const eqArrays = function(array1, array2) {
   }
 }
 
-const assertArrayEqual = function(actual, expected) {
+const assertArraysEqual = function(actual, expected) {
   if (eqArrays(actual, expected)) {
     // console.log('✅✅✅ Assertion Passed: ' + actual + " === " + expected);
     console.log(`✅✅✅ Assertion Passed: ${actual} === ${expected}`);
@@ -27,7 +27,7 @@ const assertArrayEqual = function(actual, expected) {
 };
 
 // call this. Calls line 40 which calls line 11.
-assertArrayEqual([1, 2, 3], [1, 2, 3])
+assertArraysEqual([1, 2, 3], [1, 2, 3])
 
 
 // create function that passes an array
@@ -48,19 +48,25 @@ const middle = function(array) {
 
 middle([1]) // => []
 // console.log('middle([1])', middle([1]))
+assertArraysEqual(middle([1]), [])
 
 middle([1, 2]) // => []
 // console.log('middle([1, 2])', middle([1, 2]))
+assertArraysEqual(middle([1, 2]), [])
 
 middle([1, 2, 3]) // => [2]
 // console.log('middle([1, 2, 3])', middle([1, 2, 3]))
+assertArraysEqual(middle([1, 2, 3]), [2])
 
 middle([1, 2, 3, 4, 5]) // => [3]
 // console.log('middle([1, 2, 3, 4, 5])]', middle([1, 2, 3, 4, 5]))
+assertArraysEqual(middle([1, 2, 3, 4, 5]), [3])
 
 middle([1, 2, 3, 4]) // => [2, 3]
 // console.log('middle([1, 2, 3, 4])', middle([1, 2, 3, 4]))
+assertArraysEqual(middle([1, 2, 3, 4]), [2, 3])
 
 middle([1, 2, 3, 4, 5, 6]) // => [3, 4]
 // console.log('middle([1, 2, 3, 4, 5, 6])', middle([1, 2, 3, 4, 5, 6]))
 // if even return 2 elements into middleArray
+assertArraysEqual(middle([1, 2, 3, 4, 5, 6]), [3, 4])
