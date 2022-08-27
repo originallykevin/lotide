@@ -24,6 +24,16 @@ const findKeyByValue = function(object, value) {
   // if no key is found return undefined
 }
 
+// from review
+// const findKeyByValue = function(object, value) {
+//   const keys = Object.keys(object)
+//   for (const key of keys) {
+//     const element = object[key];
+//     if (element === value) {
+//       return key;
+//     }
+//   }
+// }
 
 
 const bestTVShowsByGenre = { 
