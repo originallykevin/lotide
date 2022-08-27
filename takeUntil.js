@@ -36,6 +36,18 @@ const takeUntil = function(array, callback) {
   }
 }
 
+// from review
+// const takeUntil = function(array, callback) {
+//   const results =[];
+//   for (const item of array) {
+//     if(callback(item)){
+//       results.push(item);
+//       }
+//    }
+//   return results;
+// }
+
+
 const data1 = [1, 2, 5, 7, 2, -1, 2, 4, 5];
 const results1 = takeUntil(data1, x => x < 0);
 assertArraysEqual(results1, [ 1, 2, 5, 7, 2 ]);
