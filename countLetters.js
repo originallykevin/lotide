@@ -33,8 +33,24 @@ const countLetters = function(string) {
   return results;
 }
 
+//  from review
+//   const countLetters = function(string) {
+//   const result = {};
 
+//   for (const letter of string) {
 
+//     if(letter === ' ') {
+//       continue;
+//     };
+
+//     if(!result[letter]) {
+//       result[letter] = 0;
+//     }
+
+//     result[letter] ++;
+//   }
+//   return result;
+// }
 
 countLetters("lighthouse in the house")
 console.log('countLetters("lighthouse in the house")', countLetters("lighthouse in the house"))
