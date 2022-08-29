@@ -26,13 +26,8 @@ const eqArrays = function(array1, array2) {
   }
 }
 
-eqArrays([1, 2, 3], [1, 2, 3]) // => true
-// console.log('line 29', eqArrays([1, 2, 3], [1, 2, 3]))
-eqArrays([1, 2, 3], [3, 2, 1]) // => false
-// console.log('line 31', eqArrays([1, 2, 3], [3, 2, 1]))
-eqArrays(["1", "2", "3"], ["1", "2", "3"]) // => true
-// console.log('line 33', eqArrays(["1", "2", "3"], ["1", "2", "3"]))
-eqArrays(["1", "2", "3"], ["1", "2", 3]) // => false
-// console.log('line 35', eqArrays(["1", "2", "3"], ["1", "2", 3]))
-
+assertEqual(eqArrays([1, 2, 3], [1, 2, 3]), true) // => true
+assertEqual(eqArrays([1, 2, 3], [3, 2, 1]), false) // => false
+assertEqual(eqArrays(["1", "2", "3"], ["1", "2", "3"]), true) // => true
+assertEqual(eqArrays(["1", "2", "3"], ["1", "2", 3]), false) // => false
 assertEqual(eqArrays([1, 2, 3], [1, 2, 3]), true); // => should PASS
