@@ -26,17 +26,6 @@ const eqArrays = function(array1, array2) {
   }
 }
 
-eqArrays([1, 2, 3], [1, 2, 3]) // => true
-// console.log('line 29', eqArrays([1, 2, 3], [1, 2, 3]))
-eqArrays([1, 2, 3], [3, 2, 1]) // => false
-// console.log('line 31', eqArrays([1, 2, 3], [3, 2, 1]))
-eqArrays(["1", "2", "3"], ["1", "2", "3"]) // => true
-// console.log('line 33', eqArrays(["1", "2", "3"], ["1", "2", "3"]))
-eqArrays(["1", "2", "3"], ["1", "2", 3]) // => false
-// console.log('line 35', eqArrays(["1", "2", "3"], ["1", "2", 3]))
-
-assertEqual(eqArrays([1, 2, 3], [1, 2, 3]), true); // => should PASS
-
 const assertArraysEqual = function(actual, expected) {
   if (eqArrays(actual, expected)) {
     // console.log('✅✅✅ Assertion Passed: ' + actual + " === " + expected);
@@ -48,4 +37,6 @@ const assertArraysEqual = function(actual, expected) {
 };
 
 // call this. Calls line 40 which calls line 11.
-assertArraysEqual([1, 2, 3], [1, 2, 3])
+assertArraysEqual([1, 2, 3], [1, 2, 3]) // => PASS
+assertArraysEqual([1, 2, 4], [1, 2, 3]) // => FAIL
+assertArraysEqual([1, 2], [1, 2, 3]) // => FAIL
