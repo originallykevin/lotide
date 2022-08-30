@@ -26,7 +26,6 @@ const assertArraysEqual = function(actual, expected) {
   }
 };
 
-// call this. Calls line 40 which calls line 11.
 assertArraysEqual([1, 2, 3], [1, 2, 3])
 
 
@@ -48,7 +47,4 @@ const flatten = function(array) {
   return newArray 
 } 
 
-// console.log(flatten([1, 2, [3, 4], 5, [6]])) // => [1, 2, 3, 4, 5, 6]
-assertArraysEqual((flatten([1, 2, [3, 4], 5, [6]]),[1, 2, 3, 4, 5, 6]))
-
-// Complete. add assertion test
+assertArraysEqual(flatten([1, 2, [3, 4], 5, [6]]),[1, 2, 3, 4, 5, 6])
